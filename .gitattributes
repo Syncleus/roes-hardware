@@ -1,0 +1,4 @@
+* eol=lf
+*.grb* eol=crlf
+*.sh eol=lf
+.git* export-ignore
