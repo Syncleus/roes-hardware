@@ -1120,8 +1120,6 @@ Wire Notes Line
 	8750 4750 9550 4750
 Wire Notes Line
 	9550 4750 9550 5650
-Wire Notes Line
-	9800 4700 9000 4700
 Connection ~ 9050 4900
 $Comp
 L Device:R_Small R16
@@ -2182,4 +2180,6 @@ Wire Wire Line
 	3850 3100 3950 3100
 Wire Wire Line
 	1200 3250 1050 3250
+Wire Notes Line
+	9550 5650 8750 5650
 $EndSCHEMATC
