@@ -1178,12 +1178,44 @@ Text GLabel 10250 4700 2    60   Input ~ 0
 refl_ref
 Text GLabel 10250 5050 2    60   Input ~ 0
 refl_shft
+Text GLabel 5150 6200 0    60   Input ~ 0
+fwd_pwr
+Text GLabel 5150 6800 0    60   Input ~ 0
+refl_pwr
+Text GLabel 5200 5750 0    60   Input ~ 0
+shft_mag
+Text GLabel 5200 5900 0    60   Input ~ 0
+shft_vref
+Text GLabel 5200 6050 0    60   Input ~ 0
+shft_phase
+Text GLabel 5150 6350 0    60   Input ~ 0
+mag
+Text GLabel 5150 6500 0    60   Input ~ 0
+vref
+Text GLabel 5150 6650 0    60   Input ~ 0
+phase
 Wire Wire Line
 	9400 3950 9400 3900
 Wire Wire Line
 	3750 700  3750 750 
 Connection ~ 3750 750 
 Connection ~ 3750 1050
+Wire Wire Line
+	5200 6300 5200 6350
+Wire Wire Line
+	5200 6350 5150 6350
+Wire Wire Line
+	5250 6400 5250 6500
+Wire Wire Line
+	5250 6500 5150 6500
+Wire Wire Line
+	5300 6500 5300 6650
+Wire Wire Line
+	5300 6650 5150 6650
+Wire Wire Line
+	5350 6600 5350 6800
+Wire Wire Line
+	5350 6800 5150 6800
 Wire Wire Line
 	10000 900  10000 950 
 Wire Wire Line
@@ -1545,6 +1577,28 @@ F 3 "" H 650 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L power:+5V #PWR0101
+U 1 1 5C5E8EB8
+P 1650 700
+F 0 "#PWR0101" H 1650 550 50  0001 C CNN
+F 1 "+5V" H 1665 873 50  0000 C CNN
+F 2 "" H 1650 700 50  0001 C CNN
+F 3 "" H 1650 700 50  0001 C CNN
+	1    1650 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5C5E8F97
+P 3750 700
+F 0 "#PWR0103" H 3750 550 50  0001 C CNN
+F 1 "+5V" H 3765 873 50  0000 C CNN
+F 2 "" H 3750 700 50  0001 C CNN
+F 3 "" H 3750 700 50  0001 C CNN
+	1    3750 700 
+	1    0    0    -1  
+$EndComp
+$Comp
 L power:+5V #PWR0105
 U 1 1 5C5E9076
 P 10000 800
@@ -1553,6 +1607,28 @@ F 1 "+5V" H 10015 973 50  0000 C CNN
 F 2 "" H 10000 800 50  0001 C CNN
 F 3 "" H 10000 800 50  0001 C CNN
 	1    10000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0129
+U 1 1 5C60E1CE
+P 1050 7200
+F 0 "#PWR0129" H 1050 7050 50  0001 C CNN
+F 1 "+5V" H 1065 7373 50  0000 C CNN
+F 2 "" H 1050 7200 50  0001 C CNN
+F 3 "" H 1050 7200 50  0001 C CNN
+	1    1050 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0130
+U 1 1 5C62106F
+P 1050 6650
+F 0 "#PWR0130" H 1050 6400 50  0001 C CNN
+F 1 "GNDA" H 1055 6477 50  0000 C CNN
+F 2 "" H 1050 6650 50  0001 C CNN
+F 3 "" H 1050 6650 50  0001 C CNN
+	1    1050 6650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1629,6 +1705,123 @@ F 3 "~" H 6350 1800 50  0001 C CNN
 	1    6350 1800
 	0    1    1    0   
 $EndComp
+$Comp
+L Analog_ADC:LTC2309_TSSOP U?
+U 1 1 5C768BA3
+P 5850 6300
+F 0 "U?" H 5950 5650 50  0000 C CNN
+F 1 "LTC2309_TSSOP" H 6150 5550 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 6950 5650 50  0001 C CNN
+F 3 "http://cds.linear.com/docs/en/datasheet/2309fd.pdf" H 5600 6850 50  0001 C CNN
+	1    5850 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 6050 5250 6050
+Wire Wire Line
+	5250 6050 5250 6100
+Wire Wire Line
+	5250 6100 5450 6100
+Wire Wire Line
+	5200 5900 5300 5900
+Wire Wire Line
+	5300 5900 5300 6000
+Wire Wire Line
+	5300 6000 5450 6000
+Wire Wire Line
+	5200 5750 5350 5750
+Wire Wire Line
+	5350 5750 5350 5900
+Wire Wire Line
+	5350 5900 5450 5900
+Wire Wire Line
+	5150 6200 5450 6200
+Wire Wire Line
+	5200 6300 5450 6300
+Wire Wire Line
+	5250 6400 5450 6400
+Wire Wire Line
+	5300 6500 5450 6500
+Wire Wire Line
+	5350 6600 5450 6600
+$Comp
+L Device:C_Small C?
+U 1 1 5C8820EC
+P 6000 5350
+F 0 "C?" V 5800 5300 50  0000 L CNN
+F 1 "100nF" V 5900 5250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6000 5350 50  0001 C CNN
+F 3 "" H 6000 5350 50  0001 C CNN
+	1    6000 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C882A0E
+P 6000 5500
+F 0 "C?" V 6200 5500 50  0000 C CNN
+F 1 "10μF" V 6100 5500 50  0000 C CNN
+F 2 "" H 6000 5500 50  0001 C CNN
+F 3 "~" H 6000 5500 50  0001 C CNN
+	1    6000 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C8964C8
+P 6200 5550
+F 0 "#PWR?" H 6200 5300 50  0001 C CNN
+F 1 "GNDA" H 6205 5377 50  0000 C CNN
+F 2 "" H 6200 5550 50  0001 C CNN
+F 3 "" H 6200 5550 50  0001 C CNN
+	1    6200 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5700 5850 5500
+Wire Wire Line
+	5850 5350 5900 5350
+Wire Wire Line
+	5900 5500 5850 5500
+Connection ~ 5850 5500
+Wire Wire Line
+	5850 5500 5850 5350
+Wire Wire Line
+	6200 5550 6200 5500
+Wire Wire Line
+	6200 5350 6100 5350
+Wire Wire Line
+	6100 5500 6200 5500
+Connection ~ 6200 5500
+Wire Wire Line
+	6200 5500 6200 5350
+$Comp
+L power:+5V #PWR?
+U 1 1 5C96D24A
+P 5850 5300
+F 0 "#PWR?" H 5850 5150 50  0001 C CNN
+F 1 "+5V" H 5865 5473 50  0000 C CNN
+F 2 "" H 5850 5300 50  0001 C CNN
+F 3 "" H 5850 5300 50  0001 C CNN
+	1    5850 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5300 5850 5350
+Connection ~ 5850 5350
+$Comp
+L power:GNDA #PWR?
+U 1 1 5C981B9C
+P 5850 7050
+F 0 "#PWR?" H 5850 6800 50  0001 C CNN
+F 1 "GNDA" H 5855 6877 50  0000 C CNN
+F 2 "" H 5850 7050 50  0001 C CNN
+F 3 "" H 5850 7050 50  0001 C CNN
+	1    5850 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 7000 5850 7050
 Wire Wire Line
 	10150 3350 10250 3350
 Wire Wire Line
@@ -1637,6 +1830,105 @@ Wire Wire Line
 	10150 4700 10250 4700
 Wire Wire Line
 	10150 5050 10250 5050
+$Comp
+L Device:C_Small C?
+U 1 1 5CA135B0
+P 6450 6750
+F 0 "C?" V 6250 6700 50  0000 L CNN
+F 1 "100nF" V 6350 6650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6450 6750 50  0001 C CNN
+F 3 "" H 6450 6750 50  0001 C CNN
+	1    6450 6750
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5CA13769
+P 6650 6750
+F 0 "C?" V 6850 6750 50  0000 C CNN
+F 1 "10μF" V 6750 6750 50  0000 C CNN
+F 2 "" H 6650 6750 50  0001 C CNN
+F 3 "~" H 6650 6750 50  0001 C CNN
+	1    6650 6750
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CA13927
+P 6550 6950
+F 0 "#PWR?" H 6550 6700 50  0001 C CNN
+F 1 "GNDA" H 6555 6777 50  0000 C CNN
+F 2 "" H 6550 6950 50  0001 C CNN
+F 3 "" H 6550 6950 50  0001 C CNN
+	1    6550 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 6600 6450 6600
+Wire Wire Line
+	6650 6600 6650 6650
+Wire Wire Line
+	6450 6650 6450 6600
+Connection ~ 6450 6600
+Wire Wire Line
+	6450 6600 6650 6600
+Wire Wire Line
+	6450 6850 6450 6900
+Wire Wire Line
+	6450 6900 6550 6900
+Wire Wire Line
+	6650 6900 6650 6850
+Wire Wire Line
+	6550 6950 6550 6900
+Connection ~ 6550 6900
+Wire Wire Line
+	6550 6900 6650 6900
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CA7F273
+P 5400 6900
+F 0 "#PWR?" H 5400 6650 50  0001 C CNN
+F 1 "GNDA" H 5405 6727 50  0000 C CNN
+F 2 "" H 5400 6900 50  0001 C CNN
+F 3 "" H 5400 6900 50  0001 C CNN
+	1    5400 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 6800 5400 6800
+Wire Wire Line
+	5400 6800 5400 6900
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA95841
+P 6650 6450
+F 0 "#PWR?" H 6650 6300 50  0001 C CNN
+F 1 "+5V" H 6665 6623 50  0000 C CNN
+F 2 "" H 6650 6450 50  0001 C CNN
+F 3 "" H 6650 6450 50  0001 C CNN
+	1    6650 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 6500 6650 6500
+Wire Wire Line
+	6650 6500 6650 6450
+Wire Wire Line
+	6250 6200 6300 6200
+Wire Wire Line
+	6300 6200 6300 6150
+Wire Wire Line
+	6300 6150 6350 6150
+Wire Wire Line
+	6250 6300 6300 6300
+Wire Wire Line
+	6300 6300 6300 6350
+Wire Wire Line
+	6300 6350 6350 6350
+Text GLabel 6350 6350 2    50   Input ~ 0
+SDA
+Text GLabel 6350 6150 2    50   Input ~ 0
+SCL
 Text GLabel 10350 3800 2    50   Input ~ 0
 freq_count
 Text GLabel 6550 4050 2    50   Input ~ 0
@@ -1650,144 +1942,41 @@ Wire Wire Line
 Wire Wire Line
 	10250 3800 10350 3800
 Connection ~ 10250 3700
-Wire Notes Line
-	9550 5650 8750 5650
-Text GLabel 1000 5250 0    60   Input ~ 0
-fwd_pwr
-Text GLabel 1000 5850 0    60   Input ~ 0
-refl_pwr
-Text GLabel 1050 4800 0    60   Input ~ 0
-shft_mag
-Text GLabel 1050 4950 0    60   Input ~ 0
-shft_vref
-Text GLabel 1000 5400 0    60   Input ~ 0
-mag
-Text GLabel 1000 5550 0    60   Input ~ 0
-vref
-Text GLabel 1000 5700 0    60   Input ~ 0
-phase
-Wire Wire Line
-	1050 5350 1050 5400
-Wire Wire Line
-	1050 5400 1000 5400
-Wire Wire Line
-	1100 5450 1100 5550
-Wire Wire Line
-	1100 5550 1000 5550
-Wire Wire Line
-	1150 5550 1150 5700
-Wire Wire Line
-	1150 5700 1000 5700
-Wire Wire Line
-	1200 5650 1200 5850
-Wire Wire Line
-	1200 5850 1000 5850
-$Comp
-L power:+5V #PWR0129
-U 1 1 5C60E1CE
-P 1150 7400
-F 0 "#PWR0129" H 1150 7250 50  0001 C CNN
-F 1 "+5V" H 1165 7573 50  0000 C CNN
-F 2 "" H 1150 7400 50  0001 C CNN
-F 3 "" H 1150 7400 50  0001 C CNN
-	1    1150 7400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0130
-U 1 1 5C62106F
-P 1150 6750
-F 0 "#PWR0130" H 1150 6500 50  0001 C CNN
-F 1 "GNDA" H 1155 6577 50  0000 C CNN
-F 2 "" H 1150 6750 50  0001 C CNN
-F 3 "" H 1150 6750 50  0001 C CNN
-	1    1150 6750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 5100 1100 5100
-Wire Wire Line
-	1100 5100 1100 5150
-Wire Wire Line
-	1100 5150 1300 5150
-Wire Wire Line
-	1050 4950 1150 4950
-Wire Wire Line
-	1150 4950 1150 5050
-Wire Wire Line
-	1150 5050 1300 5050
-Wire Wire Line
-	1050 4800 1200 4800
-Wire Wire Line
-	1200 4800 1200 4950
-Wire Wire Line
-	1200 4950 1300 4950
-Wire Wire Line
-	1000 5250 1300 5250
-Wire Wire Line
-	1050 5350 1300 5350
-Wire Wire Line
-	1100 5450 1300 5450
-Wire Wire Line
-	1150 5550 1300 5550
-Wire Wire Line
-	1200 5650 1300 5650
 $Comp
 L arduino:Arduino_Due_Shield XA?
 U 1 1 5D1108F7
-P 2600 5400
-F 0 "XA?" H 2600 5400 60  0000 C CNN
-F 1 "Arduino_Due_Shield" H 2600 5550 60  0000 C CNN
-F 2 "" H 3300 8150 60  0001 C CNN
-F 3 "https://store.arduino.cc/arduino-due" H 3300 8150 60  0001 C CNN
-	1    2600 5400
+P 2500 5300
+F 0 "XA?" H 2500 5300 60  0000 C CNN
+F 1 "Arduino_Due_Shield" H 2500 5450 60  0000 C CNN
+F 2 "" H 3200 8050 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-due" H 3200 8050 60  0001 C CNN
+	1    2500 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 6650 1150 6650
+	1200 6550 1050 6550
 Wire Wire Line
-	1150 6650 1150 6750
+	1050 6550 1050 6650
 Wire Wire Line
-	1150 7400 1150 7450
+	1050 7200 1050 7250
 Wire Wire Line
-	1150 7450 1300 7450
-Text GLabel 1050 5100 0    60   Input ~ 0
-shft_phase
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5F79DCE1
-P 900 7100
-F 0 "#PWR?" H 900 6950 50  0001 C CNN
-F 1 "+3.3V" H 915 7273 50  0000 C CNN
-F 2 "" H 900 7100 50  0001 C CNN
-F 3 "" H 900 7100 50  0001 C CNN
-	1    900  7100
-	1    0    0    -1  
-$EndComp
+	1050 7250 1200 7250
+Text GLabel 1050 4300 0    50   Input ~ 0
+SCL
+Text GLabel 1050 4100 0    50   Input ~ 0
+SDA
 Wire Wire Line
-	1300 7150 900  7150
+	1200 4150 1100 4150
 Wire Wire Line
-	900  7150 900  7100
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5F7B5E97
-P 1650 700
-F 0 "#PWR?" H 1650 550 50  0001 C CNN
-F 1 "+3.3V" H 1665 873 50  0000 C CNN
-F 2 "" H 1650 700 50  0001 C CNN
-F 3 "" H 1650 700 50  0001 C CNN
-	1    1650 700 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5F800944
-P 3750 700
-F 0 "#PWR?" H 3750 550 50  0001 C CNN
-F 1 "+3.3V" H 3765 873 50  0000 C CNN
-F 2 "" H 3750 700 50  0001 C CNN
-F 3 "" H 3750 700 50  0001 C CNN
-	1    3750 700 
-	1    0    0    -1  
-$EndComp
+	1100 4150 1100 4100
+Wire Wire Line
+	1100 4100 1050 4100
+Wire Wire Line
+	1200 4250 1100 4250
+Wire Wire Line
+	1100 4250 1100 4300
+Wire Wire Line
+	1100 4300 1050 4300
+Wire Notes Line
+	9550 5650 8750 5650
 $EndSCHEMATC
