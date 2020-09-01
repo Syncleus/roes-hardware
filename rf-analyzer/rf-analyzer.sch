@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_Small R33
+L Device:R_Small R?
 U 1 1 596FDF71
 P 10050 1650
-F 0 "R33" V 9950 1600 50  0000 L CNN
+F 0 "R?" V 9950 1600 50  0000 L CNN
 F 1 "510Ω" V 10150 1550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10050 1650 50  0001 C CNN
 F 3 "" H 10050 1650 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "" H 10050 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R34
+L Device:R_Small R?
 U 1 1 596FEB83
 P 10350 1050
-F 0 "R34" V 10250 1000 50  0000 L CNN
+F 0 "R?" V 10250 1000 50  0000 L CNN
 F 1 "49.9Ω" V 10450 950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10350 1050 50  0001 C CNN
 F 3 "" H 10350 1050 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "" H 10350 1050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C23
+L Device:C_Small C?
 U 1 1 596FF084
 P 9950 700
-F 0 "C23" V 10050 650 50  0000 L CNN
+F 0 "C?" V 10050 650 50  0000 L CNN
 F 1 "100nF" V 9850 600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9950 700 50  0001 C CNN
 F 3 "" H 9950 700 50  0001 C CNN
@@ -47,10 +47,10 @@ F 3 "" H 9950 700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R32
+L Device:R_Small R?
 U 1 1 59705BB2
 P 9100 1650
-F 0 "R32" V 9000 1600 50  0000 L CNN
+F 0 "R?" V 9000 1600 50  0000 L CNN
 F 1 "470Ω" V 9200 1550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9100 1650 50  0001 C CNN
 F 3 "" H 9100 1650 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "" H 9100 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C21
+L Device:C_Small C?
 U 1 1 59705C59
 P 8850 1300
-F 0 "C21" H 8950 1300 50  0000 L CNN
+F 0 "C?" H 8950 1300 50  0000 L CNN
 F 1 "100nF" H 8900 1400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8850 1300 50  0001 C CNN
 F 3 "" H 8850 1300 50  0001 C CNN
@@ -69,10 +69,10 @@ F 3 "" H 8850 1300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C22
+L Device:C_Small C?
 U 1 1 59706A4C
 P 9350 1150
-F 0 "C22" H 9450 1150 50  0000 L CNN
+F 0 "C?" H 9450 1150 50  0000 L CNN
 F 1 "50pF" H 9400 1250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9350 1150 50  0001 C CNN
 F 3 "" H 9350 1150 50  0001 C CNN
@@ -80,10 +80,10 @@ F 3 "" H 9350 1150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R31
+L Device:R_Small R?
 U 1 1 59706B15
 P 9000 950
-F 0 "R31" V 8900 900 50  0000 L CNN
+F 0 "R?" V 8900 900 50  0000 L CNN
 F 1 "100Ω" V 9100 850 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9000 950 50  0001 C CNN
 F 3 "" H 9000 950 50  0001 C CNN
@@ -91,10 +91,10 @@ F 3 "" H 9000 950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R30
+L Device:R_Small R?
 U 1 1 59707359
 P 6800 1600
-F 0 "R30" H 6900 1550 50  0000 L CNN
+F 0 "R?" H 6900 1550 50  0000 L CNN
 F 1 "22Ω" H 6850 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6800 1600 50  0001 C CNN
 F 3 "" H 6800 1600 50  0001 C CNN
@@ -102,10 +102,10 @@ F 3 "" H 6800 1600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R29
+L Device:R_Small R?
 U 1 1 597076A4
 P 6400 1400
-F 0 "R29" V 6300 1350 50  0000 L CNN
+F 0 "R?" V 6300 1350 50  0000 L CNN
 F 1 "33Ω" V 6500 1300 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6400 1400 50  0001 C CNN
 F 3 "" H 6400 1400 50  0001 C CNN
@@ -113,10 +113,10 @@ F 3 "" H 6400 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C18
+L Device:C_Small C?
 U 1 1 59707E9F
 P 6100 1400
-F 0 "C18" V 6200 1350 50  0000 L CNN
+F 0 "C?" V 6200 1350 50  0000 L CNN
 F 1 "10nF" V 6000 1300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6100 1400 50  0001 C CNN
 F 3 "" H 6100 1400 50  0001 C CNN
@@ -124,10 +124,10 @@ F 3 "" H 6100 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C20
+L Device:C_Small C?
 U 1 1 59708773
 P 6800 1900
-F 0 "C20" H 6900 1900 50  0000 L CNN
+F 0 "C?" H 6900 1900 50  0000 L CNN
 F 1 "10nF" H 6850 2000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6800 1900 50  0001 C CNN
 F 3 "" H 6800 1900 50  0001 C CNN
@@ -135,10 +135,10 @@ F 3 "" H 6800 1900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C19
+L Device:C_Small C?
 U 1 1 597087DD
 P 6500 1900
-F 0 "C19" H 6600 1900 50  0000 L CNN
+F 0 "C?" H 6600 1900 50  0000 L CNN
 F 1 "100nF" H 6550 2000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6500 1900 50  0001 C CNN
 F 3 "" H 6500 1900 50  0001 C CNN
@@ -146,10 +146,10 @@ F 3 "" H 6500 1900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R28
+L Device:R_Small R?
 U 1 1 597088B3
 P 6150 1900
-F 0 "R28" H 6250 1850 50  0000 L CNN
+F 0 "R?" H 6250 1850 50  0000 L CNN
 F 1 "1KΩ" H 6200 1950 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6150 1900 50  0001 C CNN
 F 3 "" H 6150 1900 50  0001 C CNN
@@ -157,10 +157,10 @@ F 3 "" H 6150 1900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R27
+L Device:R_Small R?
 U 1 1 59708D55
 P 5800 1750
-F 0 "R27" V 5700 1700 50  0000 L CNN
+F 0 "R?" V 5700 1700 50  0000 L CNN
 F 1 "1KΩ" V 5900 1650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5800 1750 50  0001 C CNN
 F 3 "" H 5800 1750 50  0001 C CNN
@@ -183,10 +183,10 @@ fwd_shft
 Text Notes 8300 600  0    60   ~ 0
 Phase Shifter
 $Comp
-L Device:D_Schottky_Small_ALT D1
+L Device:D_Schottky_Small_ALT D?
 U 1 1 5970BBB4
 P 9850 2300
-F 0 "D1" H 9800 2200 50  0000 L CNN
+F 0 "D?" H 9800 2200 50  0000 L CNN
 F 1 "1N5711" H 9700 2400 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" V 9850 2300 50  0001 C CNN
 F 3 "" V 9850 2300 50  0001 C CNN
@@ -194,10 +194,10 @@ F 3 "" V 9850 2300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C13
+L Device:C_Small C?
 U 1 1 5970BF1F
 P 10100 2500
-F 0 "C13" H 10200 2500 50  0000 L CNN
+F 0 "C?" H 10200 2500 50  0000 L CNN
 F 1 "100nF" H 10150 2600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10100 2500 50  0001 C CNN
 F 3 "" H 10100 2500 50  0001 C CNN
@@ -205,10 +205,10 @@ F 3 "" H 10100 2500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C15
+L Device:C_Small C?
 U 1 1 5970C0BE
 P 10550 2500
-F 0 "C15" H 10650 2500 50  0000 L CNN
+F 0 "C?" H 10650 2500 50  0000 L CNN
 F 1 "100nF" H 10600 2600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10550 2500 50  0001 C CNN
 F 3 "" H 10550 2500 50  0001 C CNN
@@ -220,10 +220,10 @@ fwd_sig
 Text GLabel 10650 2300 2    60   Input ~ 0
 fwd_pwr
 $Comp
-L Device:D_Schottky_Small_ALT D2
+L Device:D_Schottky_Small_ALT D?
 U 1 1 5970EE87
 P 9900 3200
-F 0 "D2" H 9850 3100 50  0000 L CNN
+F 0 "D?" H 9850 3100 50  0000 L CNN
 F 1 "1N5711" H 9750 3300 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" V 9900 3200 50  0001 C CNN
 F 3 "" V 9900 3200 50  0001 C CNN
@@ -231,10 +231,10 @@ F 3 "" V 9900 3200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C14
+L Device:C_Small C?
 U 1 1 5970EE8D
 P 10150 3400
-F 0 "C14" H 10250 3400 50  0000 L CNN
+F 0 "C?" H 10250 3400 50  0000 L CNN
 F 1 "100nF" H 10200 3500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10150 3400 50  0001 C CNN
 F 3 "" H 10150 3400 50  0001 C CNN
@@ -242,10 +242,10 @@ F 3 "" H 10150 3400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C16
+L Device:C_Small C?
 U 1 1 5970EE93
 P 10600 3400
-F 0 "C16" H 10700 3400 50  0000 L CNN
+F 0 "C?" H 10700 3400 50  0000 L CNN
 F 1 "100nF" H 10650 3500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10600 3400 50  0001 C CNN
 F 3 "" H 10600 3400 50  0001 C CNN
@@ -259,10 +259,10 @@ refl_pwr
 Text Notes 9350 2000 0    60   ~ 0
 Envelope Detector
 $Comp
-L Device:C_Small C2
+L Device:C_Small C?
 U 1 1 5971253A
 P 950 1550
-F 0 "C2" V 1050 1500 50  0000 L CNN
+F 0 "C?" V 1050 1500 50  0000 L CNN
 F 1 "1nF" V 850 1500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 950 1550 50  0001 C CNN
 F 3 "" H 950 1550 50  0001 C CNN
@@ -270,10 +270,10 @@ F 3 "" H 950 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C3
+L Device:C_Small C?
 U 1 1 597125A5
 P 950 1850
-F 0 "C3" V 1050 1800 50  0000 L CNN
+F 0 "C?" V 1050 1800 50  0000 L CNN
 F 1 "1nF" V 850 1800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 950 1850 50  0001 C CNN
 F 3 "" H 950 1850 50  0001 C CNN
@@ -281,10 +281,10 @@ F 3 "" H 950 1850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C6
+L Device:C_Small C?
 U 1 1 59713489
 P 1800 1050
-F 0 "C6" V 1900 1000 50  0000 L CNN
+F 0 "C?" V 1900 1000 50  0000 L CNN
 F 1 "100nF" V 1700 950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 1050 50  0001 C CNN
 F 3 "" H 1800 1050 50  0001 C CNN
@@ -292,10 +292,10 @@ F 3 "" H 1800 1050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C5
+L Device:C_Small C?
 U 1 1 59713736
 P 1800 750
-F 0 "C5" V 1900 700 50  0000 L CNN
+F 0 "C?" V 1900 700 50  0000 L CNN
 F 1 "100pF" V 1700 650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1800 750 50  0001 C CNN
 F 3 "" H 1800 750 50  0001 C CNN
@@ -315,10 +315,10 @@ fwd_sig
 Text GLabel 1050 2150 0    60   Input ~ 0
 refl_sig
 $Comp
-L Device:C_Small C8
+L Device:C_Small C?
 U 1 1 59715DA1
 P 3050 1550
-F 0 "C8" V 3150 1500 50  0000 L CNN
+F 0 "C?" V 3150 1500 50  0000 L CNN
 F 1 "1nF" V 2950 1500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3050 1550 50  0001 C CNN
 F 3 "" H 3050 1550 50  0001 C CNN
@@ -326,10 +326,10 @@ F 3 "" H 3050 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C9
+L Device:C_Small C?
 U 1 1 59715DA7
 P 3050 1850
-F 0 "C9" V 3150 1800 50  0000 L CNN
+F 0 "C?" V 3150 1800 50  0000 L CNN
 F 1 "1nF" V 2950 1800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3050 1850 50  0001 C CNN
 F 3 "" H 3050 1850 50  0001 C CNN
@@ -348,10 +348,10 @@ F 3 "" H 2750 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C12
+L Device:C_Small C?
 U 1 1 59715DE8
 P 3900 1050
-F 0 "C12" V 4000 1000 50  0000 L CNN
+F 0 "C?" V 4000 1000 50  0000 L CNN
 F 1 "100nF" V 3800 950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3900 1050 50  0001 C CNN
 F 3 "" H 3900 1050 50  0001 C CNN
@@ -359,10 +359,10 @@ F 3 "" H 3900 1050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C11
+L Device:C_Small C?
 U 1 1 59715DF4
 P 3900 750
-F 0 "C11" V 4000 700 50  0000 L CNN
+F 0 "C?" V 4000 700 50  0000 L CNN
 F 1 "100pF" V 3800 650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3900 750 50  0001 C CNN
 F 3 "" H 3900 750 50  0001 C CNN
@@ -772,10 +772,10 @@ F 3 "" H 3750 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational_Freemo:OPA695 U3
+L Amplifier_Operational_Freemo:OPA695 U?
 U 1 1 5C3F18FF
 P 9850 1050
-F 0 "U3" H 9900 1150 50  0000 L CNN
+F 0 "U?" H 9900 1150 50  0000 L CNN
 F 1 "OPA695" H 9850 900 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9750 1100 50  0001 C CNN
 F 3 "" H 9950 1300 50  0001 C CNN
@@ -1249,10 +1249,10 @@ Wire Wire Line
 Wire Wire Line
 	6200 1050 6250 1050
 $Comp
-L Device:C_Small C17
+L Device:C_Small C?
 U 1 1 59707F0B
 P 6100 1050
-F 0 "C17" V 6200 1000 50  0000 L CNN
+F 0 "C?" V 6200 1000 50  0000 L CNN
 F 1 "100nF" V 6000 950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6100 1050 50  0001 C CNN
 F 3 "" H 6100 1050 50  0001 C CNN
