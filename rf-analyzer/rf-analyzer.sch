@@ -1776,4 +1776,28 @@ F 3 "" H 10600 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10750 1050 10700 1050
+$Comp
+L Device:RF_Shield_Two_Pieces J?
+U 1 1 5FB2E8F5
+P 5750 4800
+F 0 "J?" H 6480 4864 50  0000 L CNN
+F 1 "RF_Shield_Two_Pieces" H 6480 4773 50  0000 L CNN
+F 2 "RF_Shielding:Laird_Technologies_BMI-S-230-F_50.8x38.1mm" H 5750 4700 50  0001 C CNN
+F 3 "~" H 5750 4700 50  0001 C CNN
+	1    5750 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5FB3AD55
+P 5750 5250
+F 0 "#PWR?" H 5750 5000 50  0001 C CNN
+F 1 "GNDA" H 5755 5077 50  0000 C CNN
+F 2 "" H 5750 5250 50  0001 C CNN
+F 3 "" H 5750 5250 50  0001 C CNN
+	1    5750 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5200 5750 5250
 $EndSCHEMATC
