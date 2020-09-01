@@ -1598,17 +1598,6 @@ F 3 "" H 5100 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
-U 1 1 60554C94
-P 5900 3400
-F 0 "#PWR?" H 5900 3250 50  0001 C CNN
-F 1 "+3.3V" H 5915 3573 50  0000 C CNN
-F 2 "" H 5900 3400 50  0001 C CNN
-F 3 "" H 5900 3400 50  0001 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDA #PWR?
 U 1 1 605777A2
 P 5450 3600
@@ -1684,8 +1673,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 4100 5900 4100
 Connection ~ 5900 4100
-Wire Wire Line
-	5900 3400 5900 3450
 Text GLabel 4950 3850 0    60   Input ~ 0
 fwd_sig_dc
 Wire Wire Line
@@ -1734,4 +1721,17 @@ Wire Wire Line
 Wire Wire Line
 	6650 3750 6600 3750
 Connection ~ 6600 3750
+$Comp
+L power:+5V #PWR?
+U 1 1 5F881898
+P 5900 3400
+F 0 "#PWR?" H 5900 3250 50  0001 C CNN
+F 1 "+5V" H 5915 3573 50  0000 C CNN
+F 2 "" H 5900 3400 50  0001 C CNN
+F 3 "" H 5900 3400 50  0001 C CNN
+	1    5900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3400 5900 3450
 $EndSCHEMATC
