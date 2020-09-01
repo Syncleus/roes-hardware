@@ -1497,17 +1497,6 @@ Wire Notes Line
 	9950 3950 8650 3950
 Connection ~ 9900 800 
 $Comp
-L Device:C_Small C?
-U 1 1 604F0B98
-P 6150 3100
-F 0 "C?" V 5950 3050 50  0000 L CNN
-F 1 "1nF" V 6050 3000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6150 3100 50  0001 C CNN
-F 3 "" H 6150 3100 50  0001 C CNN
-	1    6150 3100
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GNDA #PWR?
 U 1 1 605777A2
 P 6500 2850
@@ -1564,7 +1553,6 @@ Wire Wire Line
 	6250 2600 6250 3100
 Wire Wire Line
 	6250 3100 6750 3100
-Connection ~ 6250 3100
 $Comp
 L power:GNDA #PWR?
 U 1 1 5F68DE6E
@@ -1583,10 +1571,10 @@ Wire Wire Line
 Wire Wire Line
 	7050 3350 6950 3350
 Connection ~ 6950 3350
-Text GLabel 6000 3100 0    60   Input ~ 0
+Text GLabel 6200 3100 0    60   Input ~ 0
 fwd_sig_dc
 Wire Wire Line
-	6000 3100 6050 3100
+	6200 3100 6250 3100
 $Comp
 L Device:R_Small R?
 U 1 1 5F77CD96
@@ -1808,4 +1796,5 @@ F 3 "" H 1050 7300 50  0001 C CNN
 	1    1050 7300
 	1    0    0    -1  
 $EndComp
+Connection ~ 6250 3100
 $EndSCHEMATC
