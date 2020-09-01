@@ -1327,7 +1327,7 @@ U 1 1 5D1108F7
 P 2500 5300
 F 0 "XA?" H 2500 5300 60  0000 C CNN
 F 1 "Arduino_Due_Shield" H 2500 5450 60  0000 C CNN
-F 2 "" H 3200 8050 60  0001 C CNN
+F 2 "Arduino:Arduino_Due_Shield" H 3200 8050 60  0001 C CNN
 F 3 "https://store.arduino.cc/arduino-due" H 3200 8050 60  0001 C CNN
 	1    2500 5300
 	1    0    0    -1  
