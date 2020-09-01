@@ -1319,7 +1319,7 @@ Wire Wire Line
 	9500 5700 9450 5700
 Wire Wire Line
 	9450 5700 9450 5800
-Text GLabel 6350 5000 2    50   Input ~ 0
+Text GLabel 6650 3750 2    50   Input ~ 0
 freq_count
 $Comp
 L arduino:Arduino_Due_Shield XA?
@@ -1586,4 +1586,152 @@ Connection ~ 1200 7350
 Wire Wire Line
 	1200 7250 1200 7150
 Connection ~ 1200 7250
+$Comp
+L Device:C_Small C?
+U 1 1 604F0B98
+P 5100 3850
+F 0 "C?" V 4900 3800 50  0000 L CNN
+F 1 "1nF" V 5000 3750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5100 3850 50  0001 C CNN
+F 3 "" H 5100 3850 50  0001 C CNN
+	1    5100 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60554C94
+P 5900 3400
+F 0 "#PWR?" H 5900 3250 50  0001 C CNN
+F 1 "+3.3V" H 5915 3573 50  0000 C CNN
+F 2 "" H 5900 3400 50  0001 C CNN
+F 3 "" H 5900 3400 50  0001 C CNN
+	1    5900 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 605777A2
+P 5450 3600
+F 0 "#PWR?" H 5450 3350 50  0001 C CNN
+F 1 "GNDA" H 5455 3427 50  0000 C CNN
+F 2 "" H 5450 3600 50  0001 C CNN
+F 3 "" H 5450 3600 50  0001 C CNN
+	1    5450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60590B3F
+P 5300 3350
+F 0 "R?" V 5200 3300 50  0000 L CNN
+F 1 "1KΩ" V 5400 3250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5300 3350 50  0001 C CNN
+F 3 "" H 5300 3350 50  0001 C CNN
+	1    5300 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational_Freemo:TLV3501_DBV U?
+U 1 1 5F57AB43
+P 6000 3750
+F 0 "U?" H 6150 4000 50  0000 L CNN
+F 1 "TLV3501_DBV" H 6000 3900 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6650 3500 50  0001 C CNN
+F 3 "" H 6100 4000 50  0001 C CNN
+	1    6000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F5C5A9B
+P 5450 3450
+F 0 "C?" V 5250 3400 50  0000 L CNN
+F 1 "100nF" V 5350 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5450 3450 50  0001 C CNN
+F 3 "" H 5450 3450 50  0001 C CNN
+	1    5450 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 3600 5450 3550
+Wire Wire Line
+	5400 3350 5450 3350
+Wire Wire Line
+	5450 3350 5700 3350
+Wire Wire Line
+	5700 3350 5700 3650
+Connection ~ 5450 3350
+Wire Wire Line
+	5200 3350 5200 3850
+Wire Wire Line
+	5200 3850 5700 3850
+Connection ~ 5200 3850
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F68DE6E
+P 5900 4100
+F 0 "#PWR?" H 5900 3850 50  0001 C CNN
+F 1 "GNDA" H 5905 3927 50  0000 C CNN
+F 2 "" H 5900 4100 50  0001 C CNN
+F 3 "" H 5900 4100 50  0001 C CNN
+	1    5900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4050 5900 4100
+Wire Wire Line
+	6000 4050 6000 4100
+Wire Wire Line
+	6000 4100 5900 4100
+Connection ~ 5900 4100
+Wire Wire Line
+	5900 3400 5900 3450
+Text GLabel 4950 3850 0    60   Input ~ 0
+fwd_sig_dc
+Wire Wire Line
+	4950 3850 5000 3850
+$Comp
+L Device:R_Small R?
+U 1 1 5F77CD96
+P 6450 3750
+F 0 "R?" V 6350 3700 50  0000 L CNN
+F 1 "170Ω" V 6550 3650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6450 3750 50  0001 C CNN
+F 3 "" H 6450 3750 50  0001 C CNN
+	1    6450 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5F7D1F53
+P 6600 3950
+F 0 "D?" V 6600 3800 50  0000 L CNN
+F 1 "3.3v" V 6700 3750 50  0000 L CNN
+F 2 "" H 6600 3950 50  0001 C CNN
+F 3 "~" H 6600 3950 50  0001 C CNN
+	1    6600 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5F7D93FA
+P 6600 4150
+F 0 "#PWR?" H 6600 3900 50  0001 C CNN
+F 1 "GNDA" H 6605 3977 50  0000 C CNN
+F 2 "" H 6600 4150 50  0001 C CNN
+F 3 "" H 6600 4150 50  0001 C CNN
+	1    6600 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3750 6350 3750
+Wire Wire Line
+	6550 3750 6600 3750
+Wire Wire Line
+	6600 3750 6600 3800
+Wire Wire Line
+	6600 4100 6600 4150
+Wire Wire Line
+	6650 3750 6600 3750
+Connection ~ 6600 3750
 $EndSCHEMATC
