@@ -331,12 +331,7 @@ Text Notes 550  700  0    60   ~ 0
 Text GLabel 6050 950  2    60   Input ~ 0
 fwd_sig
 Wire Wire Line
-	9750 650  9750 700 
-Wire Wire Line
 	9850 750  9750 750 
-Wire Wire Line
-	9850 700  9750 700 
-Connection ~ 9750 700 
 Wire Wire Line
 	10050 700  10150 700 
 Wire Wire Line
@@ -598,8 +593,6 @@ Wire Wire Line
 Wire Wire Line
 	9400 5700 9200 5700
 Wire Wire Line
-	9750 700  9750 750 
-Wire Wire Line
 	9500 1650 9950 1650
 Wire Wire Line
 	8850 950  8900 950 
@@ -820,12 +813,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0105
 U 1 1 5C5E9076
-P 9750 650
-F 0 "#PWR0105" H 9750 500 50  0001 C CNN
-F 1 "+5V" H 9765 823 50  0000 C CNN
-F 2 "" H 9750 650 50  0001 C CNN
-F 3 "" H 9750 650 50  0001 C CNN
-	1    9750 650 
+P 9750 700
+F 0 "#PWR0105" H 9750 550 50  0001 C CNN
+F 1 "+5V" H 9765 873 50  0000 C CNN
+F 2 "" H 9750 700 50  0001 C CNN
+F 3 "" H 9750 700 50  0001 C CNN
+	1    9750 700 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1211,7 +1204,6 @@ Wire Notes Line
 	9950 3800 9950 3950
 Wire Notes Line
 	9950 3950 8650 3950
-Connection ~ 9750 750 
 $Comp
 L power:GNDA #PWR?
 U 1 1 605777A2
@@ -1784,4 +1776,10 @@ Wire Wire Line
 	8650 3000 8650 3100
 Wire Wire Line
 	8650 3300 8650 3400
+Wire Wire Line
+	9850 700  9750 700 
+Wire Wire Line
+	9750 700  9750 750 
+Connection ~ 9750 700 
+Connection ~ 9750 750 
 $EndSCHEMATC
