@@ -929,24 +929,24 @@ Wire Wire Line
 $Comp
 L Device:C_Small C?
 U 1 1 5C8820EC
-P 10050 4250
-F 0 "C?" V 9850 4200 50  0000 L CNN
-F 1 "100nF" V 9950 4150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10050 4250 50  0001 C CNN
-F 3 "" H 10050 4250 50  0001 C CNN
-	1    10050 4250
+P 10050 4350
+F 0 "C?" V 9850 4300 50  0000 L CNN
+F 1 "100nF" V 9950 4250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10050 4350 50  0001 C CNN
+F 3 "" H 10050 4350 50  0001 C CNN
+	1    10050 4350
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5C882A0E
-P 10050 4400
-F 0 "C?" V 10250 4400 50  0000 C CNN
-F 1 "10μF" V 10150 4400 50  0000 C CNN
-F 2 "" H 10050 4400 50  0001 C CNN
-F 3 "~" H 10050 4400 50  0001 C CNN
-	1    10050 4400
-	0    1    1    0   
+P 1050 7450
+F 0 "C?" V 1250 7450 50  0000 C CNN
+F 1 "10μF" V 1150 7450 50  0000 C CNN
+F 2 "" H 1050 7450 50  0001 C CNN
+F 3 "~" H 1050 7450 50  0001 C CNN
+	1    1050 7450
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GNDA #PWR?
@@ -960,23 +960,7 @@ F 3 "" H 10250 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9900 4600 9900 4400
-Wire Wire Line
-	9900 4250 9950 4250
-Wire Wire Line
-	9950 4400 9900 4400
-Connection ~ 9900 4400
-Wire Wire Line
-	9900 4400 9900 4250
-Wire Wire Line
-	10250 4450 10250 4400
-Wire Wire Line
-	10250 4250 10150 4250
-Wire Wire Line
-	10150 4400 10250 4400
-Connection ~ 10250 4400
-Wire Wire Line
-	10250 4400 10250 4250
+	9900 4350 9950 4350
 $Comp
 L power:+5V #PWR?
 U 1 1 5C96D24A
@@ -988,9 +972,6 @@ F 3 "" H 9900 4200 50  0001 C CNN
 	1    9900 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9900 4200 9900 4250
-Connection ~ 9900 4250
 $Comp
 L power:GNDA #PWR?
 U 1 1 5C981B9C
@@ -1496,8 +1477,6 @@ Wire Wire Line
 	1050 7350 1200 7350
 Wire Wire Line
 	1050 7300 1050 7350
-Wire Wire Line
-	1200 6550 1050 6550
 $Comp
 L arduino:Arduino_Due_Shield XA?
 U 1 1 5D1108F7
@@ -1782,4 +1761,27 @@ Wire Notes Line
 	8200 1900 11200 1900
 Wire Notes Line
 	8200 2350 5050 2350
+Wire Wire Line
+	9900 4200 9900 4350
+Connection ~ 9900 4350
+Wire Wire Line
+	9900 4350 9900 4600
+Wire Wire Line
+	10250 4450 10250 4350
+Wire Wire Line
+	10250 4350 10150 4350
+Connection ~ 1050 7350
+Wire Wire Line
+	1050 6550 1200 6550
+$Comp
+L power:GNDA #PWR?
+U 1 1 60478DD4
+P 1050 7550
+F 0 "#PWR?" H 1050 7300 50  0001 C CNN
+F 1 "GNDA" H 1055 7377 50  0000 C CNN
+F 2 "" H 1050 7550 50  0001 C CNN
+F 3 "" H 1050 7550 50  0001 C CNN
+	1    1050 7550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
