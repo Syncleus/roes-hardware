@@ -1292,28 +1292,6 @@ fwd_sig_dc
 Wire Wire Line
 	6200 3100 6250 3100
 $Comp
-L Device:R_Small R?
-U 1 1 5F77CD96
-P 8500 3000
-F 0 "R?" V 8400 2950 50  0000 L CNN
-F 1 "170Ω" V 8600 2900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8500 3000 50  0001 C CNN
-F 3 "" H 8500 3000 50  0001 C CNN
-	1    8500 3000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener D?
-U 1 1 5F7D1F53
-P 8650 3200
-F 0 "D?" V 8650 3050 50  0000 L CNN
-F 1 "3.3v" V 8750 3000 50  0000 L CNN
-F 2 "" H 8650 3200 50  0001 C CNN
-F 3 "~" H 8650 3200 50  0001 C CNN
-	1    8650 3200
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GNDA #PWR?
 U 1 1 5F7D93FA
 P 8650 3400
@@ -1328,10 +1306,6 @@ Wire Wire Line
 	7350 3000 7400 3000
 Wire Wire Line
 	8600 3000 8650 3000
-Wire Wire Line
-	8650 3000 8650 3050
-Wire Wire Line
-	8650 3350 8650 3400
 $Comp
 L power:+5V #PWR?
 U 1 1 5F881898
@@ -1784,4 +1758,30 @@ F 3 "" H 1050 7550 50  0001 C CNN
 	1    1050 7550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F77CD96
+P 8500 3000
+F 0 "R?" V 8400 2950 50  0000 L CNN
+F 1 "10KΩ" V 8600 2900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8500 3000 50  0001 C CNN
+F 3 "" H 8500 3000 50  0001 C CNN
+	1    8500 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 604D1349
+P 8650 3200
+F 0 "R?" V 8550 3150 50  0000 L CNN
+F 1 "30KΩ" V 8750 3100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8650 3200 50  0001 C CNN
+F 3 "" H 8650 3200 50  0001 C CNN
+	1    8650 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3000 8650 3100
+Wire Wire Line
+	8650 3300 8650 3400
 $EndSCHEMATC
