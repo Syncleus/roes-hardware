@@ -169,7 +169,7 @@ F 3 "" H 5600 1450 50  0001 C CNN
 $EndComp
 Text GLabel 10750 1050 2    60   Input ~ 0
 fwd_shft
-Text Notes 8300 600  0    60   ~ 0
+Text Notes 8250 600  0    60   ~ 0
 Phase Shifter
 Text GLabel 9250 2800 0    60   Input ~ 0
 fwd_sig
@@ -336,9 +336,9 @@ Wire Wire Line
 Wire Wire Line
 	5600 1500 5600 1450
 Wire Notes Line
-	8250 650  8950 650 
+	8200 650  8900 650 
 Wire Notes Line
-	8950 650  8950 500 
+	8900 650  8900 500 
 Wire Wire Line
 	9350 1050 9350 950 
 Connection ~ 9350 950 
