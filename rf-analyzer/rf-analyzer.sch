@@ -525,8 +525,6 @@ Wire Wire Line
 	10500 1050 10450 1050
 Text GLabel 9200 5100 0    60   Input ~ 0
 fwd_pwr
-Text GLabel 9200 5700 0    60   Input ~ 0
-refl_pwr
 Text GLabel 9250 4650 0    60   Input ~ 0
 shft_mag
 Text GLabel 9250 4800 0    60   Input ~ 0
@@ -555,10 +553,6 @@ Wire Wire Line
 	9350 5400 9350 5550
 Wire Wire Line
 	9350 5550 9200 5550
-Wire Wire Line
-	9400 5500 9400 5700
-Wire Wire Line
-	9400 5700 9200 5700
 Wire Wire Line
 	9500 1650 9950 1650
 Wire Wire Line
@@ -862,8 +856,6 @@ Wire Wire Line
 	9300 5300 9500 5300
 Wire Wire Line
 	9350 5400 9500 5400
-Wire Wire Line
-	9400 5500 9500 5500
 $Comp
 L Device:C_Small C21
 U 1 1 5C8820EC
@@ -1857,4 +1849,9 @@ Wire Wire Line
 	9200 3500 9150 3500
 Wire Wire Line
 	9350 2800 9250 2800
+Wire Wire Line
+	9500 5500 9450 5500
+Wire Wire Line
+	9450 5500 9450 5700
+Connection ~ 9450 5700
 $EndSCHEMATC
