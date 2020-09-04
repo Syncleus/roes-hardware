@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ROES VNA SWR Meter 1 MHz - 500 MHz"
+Title "ROES VNA SWR Meter"
 Date ""
 Rev "v2-git"
 Comp "Jeffrey Phillips Freeman"
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Comment1 "1 MHz - 500 MHz"
+Comment2 "-50 dBm to 0 dBm"
+Comment3 "50 Ohm input"
 Comment4 ""
 $EndDescr
 $Comp
