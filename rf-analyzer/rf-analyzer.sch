@@ -1854,7 +1854,7 @@ F 3 "" H 2750 1700 50  0001 C CNN
 	1    2750 1700
 	1    0    0    -1  
 $EndComp
-Text Notes 8900 2700 0    50   ~ 0
+Text Notes 9050 2350 0    50   ~ 0
 INHI is 100 Ohms
 Text Notes 6800 900  0    50   ~ 0
 J1 terminated with 100 Ohms\ndue to 100 Ohms in parallel\nfrom Power Detector
